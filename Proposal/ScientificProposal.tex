@@ -24,7 +24,7 @@
 \usepackage[version=3]{mhchem} % Package for chemical equation typesetting
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
 \usepackage{graphicx} % Required for the inclusion of images
-\usepackage{natbib} % Required to change bibliography style to APA
+%\usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
 \usepackage{lineno}
 \usepackage{color}
@@ -33,6 +33,7 @@
 \RequirePackage{xspace}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{ifthen} % for conditional statements
 \newboolean{uprightparticles}
 \setboolean{uprightparticles}{false} %True for upright particle symbols
@@ -52,15 +53,133 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Proposal for a GDR:\\ the Intensity Frontier } % Title
-
-\author{ all names } % Author name
-
-\date{\today} % Date for the report
-
 \begin{document}
 
-\maketitle % Insert the title, author and date
+
+\vspace{10mm}
+
+\begin{titlepage}
+\begin{center}
+\Huge{Proposal for a \\ GDR of the Intensity Frontier}\\[0.5cm]
+%\include{authorlist}
+
+%\Large{Author One and Author Two}\\[5cm]
+%\large{Your College\\Your University\\{\today}}
+\end{center}
+
+\vspace{30mm}
+  
+%\centerline{\large\bf List of the proponents.}
+%\begin{flushleft}
+\small
+\noindent
+Asmaa	Abada$^{14}$, 
+Ziad	Ajaltouni$^{11}$, 	
+Yasmine	Amhis$^{10}$, 
+Sergey     Barsuk$^{10}$,
+Nicole	Bastid$^{11}$, 
+Jerome	Baudot$^{7}$, 	
+Damir	Becirevic$^{14}$, 
+Karim       Benakli$^{15}$, 
+Eli 	Ben-Haim$^{12}$, 
+V\'{e}ronique	Bernard$^{4}$, 	
+Aoife   Bharucha$^{2}$, 
+Benoit	Blossier$^{14}$, 
+Philippe	Boucaud$^{14}$, 	
+Jerome	        Charles$^{2}$, 
+Matthew John	Charles$^{12}$, 
+Jacques	Chauveau$^{12}$, 
+Max	Chefdeville$^{8}$, 	
+Julien	Cogan$^{1}$, 
+Eric	Cogneras$^{11}$, 
+Philippe	Crochet$^{11}$, 	
+Wilfrid	Da Silva$^{12}$, 
+Sascha	Davidson$^{5}$, 	
+Cedric	Delaunay$^{9}$, 	
+Luigi 	Del Buono$^{12}$, 
+Olivier	Deschamps$^{11}$, 	
+Sebastien	Descotes-Genon$^{14}$, 
+%Michele	Frigerio$^{13}$, 	
+Benjamin	Fuks$^{15}$, 	
+Vladimir 	Gligorov$^{12}$, 
+Mark 	Goodsell$^{15}$, 	
+Diego	Guadagnoli$^{9}$, 
+Frederic	Kapusta$^{12}$, 
+Marc	        Knecht$^{2}$, 
+Emi	        Kou$^{10}$, 
+Witek	Krasny$^{12}$, 
+Stephane	Lavignac$^{6}$, 	
+Francois	Le Diberder$^{10}$, 
+R\'{e}gis	Lefèvre$^{11}$, 	
+Renaud 	Le Gac$^{1}$, 	
+Laurent	Lellouch$^{2}$, 
+Olivier	Leroy$^{1}$, 
+Frederic 	  Machefert$^{10}$, 	
+Giampiero	  Mancinelli$^{1}$, 
+Mariane	  Mangine Brinet$^{13}$, 
+Nazila Farvah	Mahmoudi$^{3}$, 	
+Jean Francois	Marchand$^{8}$, 	
+Stephane	Monteil$^{11}$, 
+Vincent	Morenas$^{11}$, 	
+Jean 	Orloff$^{11}$, 	
+Pascal	   Perret$^{11}$, 	
+Francesco	  Polci$^{12}$, 
+Sarah	  Porteboeuf$^{11}$, 
+Isabelle	  Ripp-Baudot$^{7}$, 
+Patrick	  Robbe$^{10}$, 
+Marie-H\'{e}lène	Schune$^{10}$, 
+Justine	        Serrano$^{1}$, 
+Christopher	Smith$^{13}$, 	
+Ana	         Teixeira$^{11}$, 	
+Vincent	Tisserand$^{8}$, 
+Stephane 	T'Jampens$^{8}$, 	
+Edwige 	Tournefier$^{8}$, 
+%Cristina 	Volpe$^{14}$, 	
+Guy	Wormser$^{10}$	
+
+\begin{flushleft}
+%\bigskip\newline
+{\it
+\footnotesize
+$ ^{1}$Centre de Physique des Particules de Marseille (CPPM), Marseille\\  
+$ ^{2}$Centre de Physique Th\'{e}orique (CPT),  Marseille; \\           
+$ ^{3}$Centre de Recherche Astrophysique de Lyon (CRAL), Lyon \\
+$ ^{4}$Institut de Physique Nucl\'{e}aire (IPN), Orsay \\
+$ ^{5}$Institut de Physique Nucl\'{e}aire de Lyon (IPNL), Lyon\\
+$ ^{6}$Institut de Physique Th\'{e}orique (IPhT), CEA Saclay \\
+$ ^{7}$Institut Pluridisciplinaire Hubert Curien (IPHC), Strasbourg\\
+$ ^{8}$Laboratoire d'Annecy-Le-Vieux de Physique de Particules (LAPP), Annecy-Le-Vieux\\
+$ ^{9}$Laboratoire d'Annecy-Le-Vieux de Physique Th\'{e}orique (LAPTh), Annecy-Le-Vieux\\
+$ ^{10}$Laboratoire de l'Acc\'{e}l\'{e}rateur Lineaire (LAL), Orsay\\
+$ ^{11}$Laboratoire de Physique Corpuscolaire (LPC), Clermont-Ferrand\\
+$ ^{12}$Laboratoire de Physique Nucl\'{e}aires et des Hautes Energies (LPNHE), Paris; \\
+$ ^{13}$Laboratoire de Physique Subatomique et Cosmologie (LPSC), Grenoble\\
+$ ^{14}$Laboratoire de Physique Th\'{e}orique (LPT), Orsay \\
+$ ^{15}$Laboratoire de Physique Th\'{e}orique et Hautes Energies (LPTHE), Paris\\
+%$ ^{13}$Laboratoire Charles Coulomb (LCC), Montpellier \\
+%$ ^{14}$Astroparticule et Cosmologie (APC), Paris \\
+}
+
+\end{flushleft}
+
+
+\end{titlepage}
+
+
+
+\stepcounter{page}
+
+
+
+%\title{Proposal for a \\ GDR of the Intensity Frontier } % Title
+
+%\author{ } % Author name
+
+%\date{\today} % Date for the report
+
+%\begin{document}
+
+%\maketitle % Insert the title, author and date
 
 \begin{center}
 \begin{tabular}{l r}
@@ -76,11 +195,13 @@
 % Abstract text
 % \end{abstract}
 
+%\include{authorlist}
+
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\linenumbers
+%\linenumbers
 
 \include{Introduction}
 
@@ -103,9 +224,14 @@
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\bibliographystyle{apalike}
+%\bibliographystyle{apalike}
 
-\bibliography{sample}
+%\bibliography{sample}
+%\bibliographystyle{plain}
+\bibliographystyle{JHEP}
+\bibliography{theBiblio}
+%\bibliography{charm_and_K}
+%\input{charm_and_K}
 
 %----------------------------------------------------------------------------------------
 
